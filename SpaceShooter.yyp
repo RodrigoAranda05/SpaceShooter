@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"tween_curves","path":"animcurves/tween_curves/tween_curves.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},},
     {"id":{"name":"obj_tween","path":"objects/obj_tween/obj_tween.yy",},},
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"id":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},
@@ -49,6 +50,7 @@
     {"id":{"name":"spr_bg3","path":"sprites/spr_bg3/spr_bg3.yy",},},
     {"id":{"name":"spr_bg4","path":"sprites/spr_bg4/spr_bg4.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_tiro","path":"sprites/spr_tiro/spr_tiro.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
