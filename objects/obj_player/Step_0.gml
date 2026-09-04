@@ -15,6 +15,7 @@ if(keyboard_check(ord("R")))
 	game_restart()
 }
 
+// Escudo segue o player se o escudo existir 
 if(instance_exists(meu_escudo))
 {
 	meu_escudo.x = x

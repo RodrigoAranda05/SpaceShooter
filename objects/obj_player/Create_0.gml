@@ -47,12 +47,14 @@ controla_player = function()
 		timer_tiro = espera_tiro
 	}
 	
+	// Usa o escudo
 	if(keyboard_check_released(ord("E")))
 	{
 		usa_escudo()
 	}	
 }
 
+// Tiro 1
 tiro_1 = function()
 {
 	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
@@ -60,6 +62,7 @@ tiro_1 = function()
 	_tiro.vspeed = velTiro
 }
 
+// Tiro 2
 tiro_2 = function()
 {
 	var _tiro = instance_create_layer(x -7,y,"tiro",obj_tiro)
@@ -69,12 +72,14 @@ tiro_2 = function()
 	_tiro.vspeed = velTiro
 }
 
+// Tiro 3
 tiro_3 = function()
 {
 	tiro_1()
 	tiro_2()
 }
 
+// Ganha level
 ganha_level_tiro = function()
 {
 	if(levelTiro < 3)
@@ -83,6 +88,7 @@ ganha_level_tiro = function()
 	}
 }
 
+// Desenha icone de vida ou escudo
 desenha_icone = function(_contagem, _spr, _altura)
 {
 	var _espaco = 20
@@ -93,6 +99,8 @@ desenha_icone = function(_contagem, _spr, _altura)
 	}
 }
 
+// Perde vida se vida for menor que zero morre
+// Se for invencivel ou tem escudo nao perde vida
 perde_vida = function()
 {
 	if(!invencibilidade)
@@ -113,6 +121,7 @@ perde_vida = function()
 	}
 }
 
+// Usa escudo
 usa_escudo = function()
 {
 	if(escudo > 0 && meu_escudo == noone)
