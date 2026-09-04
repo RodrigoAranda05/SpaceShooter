@@ -91,12 +91,11 @@ maquina_estado = function()
 				hspeed = choose(-1,1)
 				decidi_direcao = true
 			}
-			vspeed = -1
+			vspeed = -1.5
 			
-			if(y < 0
+			if(y < -50)
 			{
 				instance_destroy()
-				show_debug_message("a")
 			}
 		}
 		break
