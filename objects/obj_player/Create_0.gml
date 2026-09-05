@@ -109,12 +109,14 @@ perde_vida = function()
 		{
 			if(vida > 0)
 			{
+				screenshake(20)
 				vida--
 				invencibilidade = true
 				alarm[0] = game_get_speed(gamespeed_fps)
 			}
 			else
 			{
+				screenshake(50)
 				instance_destroy()
 			}
 		}
