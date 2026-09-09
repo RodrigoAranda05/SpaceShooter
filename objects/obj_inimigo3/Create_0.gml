@@ -5,6 +5,8 @@ timer_carregando = 0
 contador_tiro = 0
 decidi_direcao = false
 
+randomise()
+
 maquina_estado = function()
 {
 	switch(estado)
@@ -62,15 +64,17 @@ maquina_estado = function()
 		
 		case "atirando2":
 		{
-			var _ang = 255
-			repeat(3)
+			if(instance_exists(obj_player))
 			{
-				var _tiro = instance_create_layer(x,y,"tiro",obj_tiro2_inimigo3)
-				_tiro.speed = 4
-				_tiro.direction = _ang
-				_tiro.image_angle = _ang
+				var _ang = 255
+				repeat(3)
+				{
+					var _tiro = instance_create_layer(x,y,"tiro",obj_tiro2_inimigo3)
+					_tiro.vspeed = 4
+					_tiro.direction = _ang
 				
-				_ang += 15
+					_ang += 15
+				}
 				contador_tiro++
 			}
 			
@@ -83,6 +87,7 @@ maquina_estado = function()
 				estado = "carregando"
 			}
 		}
+		break
 		
 		case "fugindo":
 		{
