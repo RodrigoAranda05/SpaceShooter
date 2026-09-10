@@ -12,7 +12,7 @@ if(keyboard_check_released(vk_enter))
 
 if(keyboard_check(ord("R")))
 {
-	game_restart()
+	room_restart()
 }
 
 // Escudo segue o player se o escudo existir 

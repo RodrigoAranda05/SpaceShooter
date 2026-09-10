@@ -44,6 +44,9 @@ maquina_estado = function()
 		{
 			if(instance_exists(obj_player))
 			{
+				var _pitch = random_range(1,2)
+				audio_play_sound(snd_shoot_inimigo,0,0 , , , _pitch)
+				
 				var _dir = point_direction(x,y,obj_player.x, obj_player.y)
 				var _tiro = instance_create_layer(x,y,"tiro",obj_tiro_inimigo3)
 			
@@ -69,6 +72,9 @@ maquina_estado = function()
 		{
 			if(instance_exists(obj_player))
 			{
+				var _pitch = random_range(1,2)
+				audio_play_sound(snd_shoot_inimigo,0,0 , , , _pitch)
+				
 				var _ang = 255
 				repeat(3)
 				{
@@ -118,6 +124,9 @@ morrendoInimigo3 = function()
 	
 	if(vida == 0)
 	{
+		var _pitch = random_range(0.1, 2.1)
+		audio_play_sound(snd_explosao,0,0, , , _pitch)
+		
 		screenshake(20)
 		instance_destroy()
 		instance_create_layer(x,y,layer,obj_morte_inimigo)

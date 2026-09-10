@@ -1,3 +1,6 @@
+audio_stop_all()
+audio_play_sound(musica_fundo,0,1)
+
 #region variaveis
 vel = 3
 vida = 3
@@ -41,6 +44,9 @@ controla_player = function()
 	if(_atirar && timer_tiro <= 0)
 	{
 		efeito_mola(.8, 1.2)
+		
+		audio_stop_sound(snd_shoot)
+		audio_play_sound(snd_shoot, 0, 0)
 		
 		if(levelTiro == 1)
 			tiro_1()
@@ -117,6 +123,9 @@ perde_vida = function()
 				efeito_mola(2, .5)
 				timer_efeito_branco(3)
 				
+				var _pitch = random_range(1,2)
+				audio_play_sound(snd_shield_hit,0,0 , , , _pitch)
+				
 				vida--
 				invencibilidade = true
 				alarm[0] = game_get_speed(gamespeed_fps)
@@ -124,6 +133,7 @@ perde_vida = function()
 			else
 			{
 				screenshake(50)
+				instance_create_layer(x,y,layer,obj_morte_player)
 				instance_destroy()
 			}
 		}
@@ -136,6 +146,7 @@ usa_escudo = function()
 	if(escudo > 0 && meu_escudo == noone)
 	{
 		escudo--
+		audio_play_sound(snd_shield,0,0)
 		meu_escudo = instance_create_layer(x,y,escudo,obj_escudo)
 	}
 }
