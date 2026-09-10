@@ -34,6 +34,7 @@ function desenha_efeito_mola()
 {
 	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
 }
+
 function inicia_efeito_branco()
 {
 	tomei_dano = false
@@ -42,7 +43,6 @@ function timer_efeito_branco(_tempo = 1)
 {
 	tomei_dano = _tempo
 }
-
 function contador_efeito_branco()
 {
 	if(tomei_dano > 0) tomei_dano--

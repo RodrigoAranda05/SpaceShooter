@@ -5,6 +5,9 @@ timer_carregando = 0
 contador_tiro = 0
 decidi_direcao = false
 
+inicia_efeito_mola()
+inicia_efeito_branco()
+
 randomise()
 
 maquina_estado = function()
@@ -110,6 +113,9 @@ maquina_estado = function()
 morrendoInimigo3 = function()
 {
 	vida--
+	efeito_mola(1.5, .8)
+	timer_efeito_branco(5)
+	
 	if(vida == 0)
 	{
 		screenshake(20)
