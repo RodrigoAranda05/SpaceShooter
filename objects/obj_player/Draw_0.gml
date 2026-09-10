@@ -1,2 +1,14 @@
 //draw_self()
-draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, image_angle, image_blend, image_alpha)
+
+//if(tomei_dano)
+//{
+	///shader_set(sh_branco)
+	//desenha_efeito_mola()
+	//shader_reset()
+//}
+//else 
+//{
+	//desenha_efeito_mola()
+//}
+
+desenha_efeito_branco(desenha_efeito_mola)
