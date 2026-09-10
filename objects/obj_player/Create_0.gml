@@ -9,6 +9,9 @@ espera_tiro = 10
 timer_tiro = 0
 levelTiro = 1
 
+xscale = 1
+yscale = 1
+
 #endregion
 
 controla_player = function()
@@ -37,6 +40,9 @@ controla_player = function()
 	timer_tiro--
 	if(_atirar && timer_tiro <= 0)
 	{
+		xscale = .8
+		yscale = 1.2
+		
 		if(levelTiro == 1)
 			tiro_1()
 		else if(levelTiro == 2)
@@ -58,7 +64,6 @@ controla_player = function()
 tiro_1 = function()
 {
 	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
-		
 	_tiro.vspeed = velTiro
 }
 

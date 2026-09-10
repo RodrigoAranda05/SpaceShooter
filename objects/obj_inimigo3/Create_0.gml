@@ -112,6 +112,7 @@ morrendoInimigo3 = function()
 	vida--
 	if(vida == 0)
 	{
+		screenshake(20)
 		instance_destroy()
 		instance_create_layer(x,y,layer,obj_morte_inimigo)
 	}
