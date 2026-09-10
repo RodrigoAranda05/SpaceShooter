@@ -98,6 +98,14 @@ ganha_level_tiro = function()
 	}
 }
 
+ganha_vida = function()
+{
+	if(vida < 3)
+	{
+		vida++	
+	}
+}
+
 // Desenha icone de vida ou escudo
 desenha_icone = function(_contagem, _spr, _altura)
 {
