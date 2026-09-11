@@ -1,4 +1,6 @@
 global.debug = false;
+global.destino = rm_inicio
+global.transicao = false
 
 function screenshake(_treme = 1)
 {
@@ -60,4 +62,13 @@ function desenha_efeito_branco(_funcao_desenho = 0)
 		_funcao_desenho()
 	}
 	
+}
+
+function muda_room_transicao()
+{
+	room_goto(global.destino)
+}
+function finaliza_transicao()
+{
+	global.transicao = false
 }

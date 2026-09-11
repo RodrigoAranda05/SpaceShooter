@@ -24,6 +24,33 @@ function controla_menu()
 	atual = clamp(atual, 0, array_length(menu) -1)
 
 	margem = lerp(margem, 20, .1)
+	
+	if(keyboard_check_pressed(vk_enter))
+	{
+		ativa_menu()
+	}
+}
+
+function ativa_menu()
+{
+		switch(atual)
+		{
+			case 0:
+				layer_sequence_create("transicao", room_width/2, room_height/2, sq_transicao1)
+				global.destino = rm_jogo
+				global.transicao = true
+			break
+		
+			case 1:
+				layer_sequence_create("transicao", room_width/2, room_height/2, sq_transicao1)
+				global.destino = rm_tutorial
+				global.transicao = true
+			break
+		
+			case 2:
+				game_end()
+			break
+		}
 }
 
 function desenha_menu()

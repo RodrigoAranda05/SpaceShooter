@@ -159,3 +159,5 @@ usa_escudo = function()
 	}
 }
 
+layer_sequence_create("transicao", x, y, sq_transicao2)
+global.destino = rm_inicio
