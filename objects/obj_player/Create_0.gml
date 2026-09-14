@@ -143,6 +143,9 @@ perde_vida = function()
 				screenshake(50)
 				instance_create_layer(x,y,layer,obj_morte_player)
 				instance_destroy()
+				
+				layer_sequence_create("transicao", room_width/2, room_height/2, sq_transicao1)
+				global.transicao = true
 			}
 		}
 	}
@@ -155,7 +158,7 @@ usa_escudo = function()
 	{
 		escudo--
 		audio_play_sound(snd_shield,0,0)
-		meu_escudo = instance_create_layer(x,y,escudo,obj_escudo)
+		meu_escudo = instance_create_layer(x,y,"escudo",obj_escudo)
 	}
 }
 

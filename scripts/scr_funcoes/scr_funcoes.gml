@@ -67,6 +67,8 @@ function desenha_efeito_branco(_funcao_desenho = 0)
 function muda_room_transicao()
 {
 	room_goto(global.destino)
+	
+	audio_stop_all()
 }
 function finaliza_transicao()
 {

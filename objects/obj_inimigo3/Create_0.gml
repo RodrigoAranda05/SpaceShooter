@@ -18,7 +18,7 @@ maquina_estado = function()
 		{
 			if(y < 160)
 			{
-				vspeed = 1.2
+				vspeed = 1.5
 			}
 			else
 			{
