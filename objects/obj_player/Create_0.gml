@@ -106,6 +106,14 @@ ganha_vida = function()
 	}
 }
 
+ganha_vel = function()
+{
+	if(vel < 4.5)
+	{
+		vel += .5	
+	}
+}
+
 // Desenha icone de vida ou escudo
 desenha_icone = function(_contagem, _spr, _altura)
 {
