@@ -1,3 +1,4 @@
+metodo_atirando()
 
 if(!in_sequence && criado_sequencia)
 {

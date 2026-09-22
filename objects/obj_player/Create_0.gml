@@ -7,7 +7,6 @@ vida = 3
 invencibilidade = false
 escudo = 3
 meu_escudo = noone
-velTiro = -10
 espera_tiro = 10
 timer_tiro = 0
 levelTiro = 1
@@ -69,17 +68,14 @@ controla_player = function()
 tiro_1 = function()
 {
 	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
-	_tiro.vspeed = velTiro
 }
 
 // Tiro 2
 tiro_2 = function()
 {
 	var _tiro = instance_create_layer(x -7,y,"tiro",obj_tiro)
-	_tiro.vspeed = velTiro
 	
 	_tiro = instance_create_layer(x +7,y,"tiro",obj_tiro)	
-	_tiro.vspeed = velTiro
 }
 
 // Tiro 3

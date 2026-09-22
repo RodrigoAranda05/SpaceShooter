@@ -50,7 +50,12 @@ maquina_estado = function()
 				var _dir = point_direction(x,y,obj_player.x, obj_player.y)
 				var _tiro = instance_create_layer(x,y,"tiro",obj_tiro_inimigo3)
 			
-				_tiro.vspeed = 3
+				var _vel = 2
+				var _velh = lengthdir_x(_vel, _dir)
+				var _velv = lengthdir_y(_vel, _dir)
+				
+				_tiro.velh = _velh
+				_tiro.velv = _velv
 				_tiro.direction = _dir
 				_tiro.image_angle = _dir + 90
 				
@@ -67,7 +72,7 @@ maquina_estado = function()
 			}
 		}
 		break
-		
+
 		case "atirando2":
 		{
 			if(instance_exists(obj_player))
@@ -79,7 +84,12 @@ maquina_estado = function()
 				repeat(3)
 				{
 					var _tiro = instance_create_layer(x,y,"tiro",obj_tiro2_inimigo3)
-					_tiro.vspeed = 4
+					var _vel = _tiro.vel
+					var _velh = lengthdir_x(_vel,_ang)
+					var _velv = lengthdir_y(_vel,_ang)
+					
+					_tiro.velh = _velh
+					_tiro.velv = _velv
 					_tiro.direction = _ang
 				
 					_ang += 15

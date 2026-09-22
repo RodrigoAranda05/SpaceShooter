@@ -1,6 +1,7 @@
 vida = 1
 
-alarm[0] = game_get_speed(gamespeed_fps)
+tempo_tiro = 60
+timer_tiro = tempo_tiro
 
 criado_sequencia = in_sequence
 
@@ -12,7 +13,17 @@ atirando = function()
 		audio_play_sound(snd_shoot_inimigo,0,0 , , , _pitch)
 		
 		var _tiro = instance_create_layer(x,y,"tiro",obj_tiro_inimigo1)
-		_tiro.vspeed = 3
+		_tiro.velv = 3
+	}
+}
+
+metodo_atirando = function()
+{
+	timer_tiro--
+	if(timer_tiro <= 0)
+	{
+		atirando()
+		timer_tiro = tempo_tiro * random_range(1,3)
 	}
 }
 
