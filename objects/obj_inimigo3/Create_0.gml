@@ -4,6 +4,8 @@ tempo_carregando = game_get_speed(gamespeed_fps) * .7
 timer_carregando = 0
 contador_tiro = 0
 decidi_direcao = false
+velh = 0
+velv = 0
 
 inicia_efeito_mola()
 inicia_efeito_branco()
@@ -18,7 +20,7 @@ maquina_estado = function()
 		{
 			if(y < 160)
 			{
-				vspeed = 1.5
+				velv = 1.5
 			}
 			else
 			{
@@ -29,7 +31,7 @@ maquina_estado = function()
 		
 		case "carregando":
 		{
-			vspeed = 0
+			velv = 0
 			timer_carregando++
 			
 			if(timer_carregando > tempo_carregando)
@@ -112,10 +114,10 @@ maquina_estado = function()
 		{
 			if(!decidi_direcao)
 			{
-				hspeed = choose(-1,1)
+				velh = choose(-1,1)
 				decidi_direcao = true
 			}
-			vspeed = -1.5
+			velv = -1.5
 			
 			if(y < -50)
 			{

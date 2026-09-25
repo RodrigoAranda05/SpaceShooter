@@ -1,3 +1,6 @@
+x += velh
+y += velv
+
 maquina_estado()
 
 retorna_mola()
