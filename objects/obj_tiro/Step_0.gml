@@ -1,3 +1,5 @@
+if(global.hitstop) exit;
+
 if(y <= -32)
 {
 	instance_destroy()

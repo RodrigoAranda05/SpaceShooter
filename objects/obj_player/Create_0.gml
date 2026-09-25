@@ -132,6 +132,7 @@ perde_vida = function()
 			if(vida > 0)
 			{
 				screenshake(20)
+				ative_hitstop(10)
 				efeito_mola(2, .5)
 				timer_efeito_branco(3)
 				

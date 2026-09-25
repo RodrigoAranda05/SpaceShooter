@@ -6,6 +6,8 @@ contador_tiro = 0
 decidi_direcao = false
 velh = 0
 velv = 0
+vel = 1
+dir = irandom(359)
 
 inicia_efeito_mola()
 inicia_efeito_branco()
@@ -20,7 +22,7 @@ maquina_estado = function()
 		{
 			if(y < 160)
 			{
-				velv = 1.5
+				velv = vel * 2
 			}
 			else
 			{
@@ -52,7 +54,7 @@ maquina_estado = function()
 				var _dir = point_direction(x,y,obj_player.x, obj_player.y)
 				var _tiro = instance_create_layer(x,y,"tiro",obj_tiro_inimigo3)
 			
-				var _vel = 2
+				var _vel = 4
 				var _velh = lengthdir_x(_vel, _dir)
 				var _velv = lengthdir_y(_vel, _dir)
 				
@@ -114,12 +116,12 @@ maquina_estado = function()
 		{
 			if(!decidi_direcao)
 			{
-				velh = choose(-1,1)
-				decidi_direcao = true
+				velh = lengthdir_x(vel * 2,dir)
+				velh = lengthdir_y(vel * 2,dir)
 			}
-			velv = -1.5
+			velv = -vel
 			
-			if(y < -50)
+			if(y < -100 or y > room_width + 100 or x < -100 or x > room_width + 100)
 			{
 				instance_destroy()
 			}

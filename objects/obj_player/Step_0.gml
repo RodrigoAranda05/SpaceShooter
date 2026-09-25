@@ -1,3 +1,5 @@
+if(global.hitstop) exit;
+
 controla_player()
 
 if(keyboard_check_released(vk_tab))
