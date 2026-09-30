@@ -11,3 +11,6 @@ image_yscale = image_xscale
 velv = lerp(velv, -vel, .1)
 y += velv
 
+var _rastro = instance_create_layer(x,y,layer,obj_rastro_tiro)
+_rastro.cor = cor
+
