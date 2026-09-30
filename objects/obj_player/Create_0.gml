@@ -67,15 +67,16 @@ controla_player = function()
 // Tiro 1
 tiro_1 = function()
 {
-	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
+	var _x = x + random_range(-10,10)
+	var _tiro = instance_create_layer(_x,y,"tiro",obj_tiro)
 }
 
 // Tiro 2
 tiro_2 = function()
 {
-	var _tiro = instance_create_layer(x -7,y,"tiro",obj_tiro)
-	
-	_tiro = instance_create_layer(x +7,y,"tiro",obj_tiro)	
+	var _x = x + random_range(-10,10)
+	var _tiro = instance_create_layer(_x - 7,y,"tiro",obj_tiro)
+	_tiro = instance_create_layer(_x + 7,y,"tiro",obj_tiro)	
 }
 
 // Tiro 3
