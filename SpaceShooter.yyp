@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Efeito_hitstop","folderPath":"folders/Efeito_hitstop.yy","name":"Efeito_hitstop","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Efeito_damge_flash","folderPath":"folders/Efeito_damge_flash.yy","name":"Efeito_damge_flash","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -41,6 +42,7 @@
   "resources":[
     {"id":{"name":"tween_curves","path":"animcurves/tween_curves/tween_curves.yy",},},
     {"id":{"name":"fnt_space","path":"fonts/fnt_space/fnt_space.yy",},},
+    {"id":{"name":"obj_damge_flash","path":"objects/obj_damge_flash/obj_damge_flash.yy",},},
     {"id":{"name":"obj_escudo","path":"objects/obj_escudo/obj_escudo.yy",},},
     {"id":{"name":"obj_explosao_tiro","path":"objects/obj_explosao_tiro/obj_explosao_tiro.yy",},},
     {"id":{"name":"obj_hitstop_manager","path":"objects/obj_hitstop_manager/obj_hitstop_manager.yy",},},
@@ -65,6 +67,7 @@
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"id":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},
     {"id":{"name":"rm_tutorial","path":"rooms/rm_tutorial/rm_tutorial.yy",},},
+    {"id":{"name":"scr_damge_flash","path":"scripts/scr_damge_flash/scr_damge_flash.yy",},},
     {"id":{"name":"scr_funcoes","path":"scripts/scr_funcoes/scr_funcoes.yy",},},
     {"id":{"name":"scr_hitstop","path":"scripts/scr_hitstop/scr_hitstop.yy",},},
     {"id":{"name":"scr_tween","path":"scripts/scr_tween/scr_tween.yy",},},
@@ -90,6 +93,7 @@
     {"id":{"name":"spr_bg3","path":"sprites/spr_bg3/spr_bg3.yy",},},
     {"id":{"name":"spr_bg4","path":"sprites/spr_bg4/spr_bg4.yy",},},
     {"id":{"name":"spr_circulo","path":"sprites/spr_circulo/spr_circulo.yy",},},
+    {"id":{"name":"spr_damge_flash","path":"sprites/spr_damge_flash/spr_damge_flash.yy",},},
     {"id":{"name":"spr_escudo","path":"sprites/spr_escudo/spr_escudo.yy",},},
     {"id":{"name":"spr_gui_escudo","path":"sprites/spr_gui_escudo/spr_gui_escudo.yy",},},
     {"id":{"name":"spr_gui_vida","path":"sprites/spr_gui_vida/spr_gui_vida.yy",},},

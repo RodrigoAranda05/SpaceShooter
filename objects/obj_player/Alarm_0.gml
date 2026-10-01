@@ -1,1 +1,2 @@
 invencibilidade = false
+mostrar = true

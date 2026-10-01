@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_damge_flash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_damge_flash",
+  "parent":{
+    "name":"Efeito_damge_flash",
+    "path":"folders/Efeito_damge_flash.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

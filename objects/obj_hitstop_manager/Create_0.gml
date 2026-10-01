@@ -6,9 +6,10 @@ bgs_vspeed = []
 
 desfaz_hitstop = function()
 {
-	if(!global.hitstop) return
-	
-	show_debug_message("A")
+	if(!global.hitstop) 
+	{
+		return
+	}
 	
 	timer_hitstop--
 	

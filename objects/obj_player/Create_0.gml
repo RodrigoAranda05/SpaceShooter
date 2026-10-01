@@ -10,6 +10,7 @@ meu_escudo = noone
 espera_tiro = 10
 timer_tiro = 0
 levelTiro = 1
+mostrar = true
 
 inicia_efeito_branco()
 inicia_efeito_mola()
@@ -134,6 +135,7 @@ perde_vida = function()
 			{
 				screenshake(20)
 				ative_hitstop(10)
+				ativa_damage_flash(c_red)
 				efeito_mola(2, .5)
 				timer_efeito_branco(3)
 				

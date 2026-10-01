@@ -18,5 +18,10 @@ else
 	meu_escudo = noone
 }
 
+if(invencibilidade)
+{
+	mostrar = !mostrar
+}
+
 retorna_mola(.3)
 contador_efeito_branco()
